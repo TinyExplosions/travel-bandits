@@ -5,16 +5,16 @@ const fastify = require('fastify')({
 
 fastify.register(require('fastify-static'), {
   root: path.join(__dirname, 'public'),
-  prefix: '/public/', // optional: default '/'
+  prefix: '/', // optional: default '/'
 })
 
 fastify.get('/another/path', function (req, reply) {
   
 })
 
-fastify.get('/', async (request, reply) => {
-  reply.sendFile('index.html') // serving path.join(__dirname, 'public', 'myHtml.html') directly
-})
+// fastify.get('/', async (request, reply) => {
+//   reply.sendFile('index.html') // serving path.join(__dirname, 'public', 'myHtml.html') directly
+// })
 
 // fastify.get('/', async (request, reply) => {
 //   reply.type('application/json').code(200)

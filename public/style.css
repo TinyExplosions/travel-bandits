@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper>* {
+    padding: 0.5em;
+}
+
+h3 {
+    font-family: Overpass, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#map {
+    flex-grow: 1;
+}
