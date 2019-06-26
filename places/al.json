@@ -93,4 +93,52 @@
     {
         "homepage": "https://www.redhat.com/en/about/office-locations"
     }
-}]
+},{
+    "city": "Swindon",
+    "country": "UK",
+    "name": "Helen Browning's Chop House",
+    "address": "19-21 Wood St, Swindon SN1 4AN",
+    "coordinates": [51.552380, -1.775865],
+    "description":
+    {
+        "Comment": "Decent food, meat & 2 veg, but slightly fancy"
+    },
+    "type": "restaurant",
+    "link":
+    {
+        "homepage": "http://helenbrowningschophouse.co.uk"
+    }
+},
+{
+    "city": "Swindon",
+    "country": "UK",
+    "name": "Los Gatos",
+    "address": "1-3 Devizes Rd, Swindon SN1 4BJ",
+    "coordinates": [51.552278, -1.776904],
+    "description":
+    {
+        "Comment": "Good tapas"
+    },
+    "type": "restaurant",
+    "link":
+    {
+        "homepage": "http://losgatos.co.uk"
+    }
+},
+{
+    "city": "Swindon",
+    "country": "UK",
+    "name": "The Jewel in the Crown",
+    "address": "14-16 Victoria Rd, Swindon SN1 3AL",
+    "coordinates": [51.557879, -1.779213],
+    "description":
+    {
+        "Comment": "Decent indian restaurant"
+    },
+    "type": "restaurant",
+    "link":
+    {
+        "homepage": "http://www.jewelinthecrown.co.uk"
+    }
+}
+]
