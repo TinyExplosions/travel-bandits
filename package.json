@@ -1,0 +1,23 @@
+{
+  "name": "travel-bandits",
+  "version": "1.0.0",
+  "description": "Locations of team approved places",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyExplosions/travel-bandits.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TinyExplosions/travel-bandits/issues"
+  },
+  "homepage": "https://github.com/TinyExplosions/travel-bandits#readme",
+  "dependencies": {
+    "fastify": "^2.5.0",
+    "fastify-static": "^2.5.0"
+  }
+}

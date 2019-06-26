@@ -1,0 +1,50 @@
+[
+	{
+        "city": "London",
+        "country": "UK",
+        "name": "The Hydrant",
+        "address": "Equitable House, 1 Monument St, London EC3R 8BG",
+        "coordinates": ["51.509850", "-0.085180"],
+        "description": {
+          "Comment": "London Office local pub, will find folk there most nights."
+        },
+        "type": "pub",
+        "link": {"homepage":"https://www.thehydrant.co.uk"}
+    },
+    	{
+        "city": "London",
+        "country": "UK",
+        "name": "Brewdog Tower Hill",
+        "address": "21 Great Tower St, London EC3R 5AR",
+        "coordinates": ["51.509850", "-0.081110"],
+        "description": {
+          "Comment": "An alternate local for the London Office, worth a visit."
+        },
+        "type": "pub",
+        "link": {"homepage":"https://www.brewdog.com/bars/uk/brewdog-outpost-tower-hill"}
+    },
+    	{
+        "city": "London",
+        "country": "UK",
+        "name": "London Office",
+        "address": "Peninsular House, 30-36 Monument St, London EC3R 8NB",
+        "coordinates": ["51.509990", "-0.085620"],
+        "description": {
+          "Comment": "Red Hat London Office"
+        },
+        "type": "office",
+        "link": {"homepage":"https://www.redhat.com/en/about/office-locations"}
+    },
+    	{
+        "city": "Farnborough",
+        "country": "UK",
+        "name": "Farnborough Office",
+        "address": "200 Fowler Avenue Farnborough, Hampshire GU14 7JP",
+        "coordinates": ["51.284780", "-0.758490"],
+        "description": {
+          "Comment": "Red Hat Farnborough Office, often abbreviated to FAB"
+        },
+        "type": "office",
+        "link": {"homepage":"https://www.redhat.com/en/about/office-locations"}
+    }
+]
