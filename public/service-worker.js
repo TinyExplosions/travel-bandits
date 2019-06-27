@@ -7,7 +7,12 @@ const FILES_TO_CACHE = [
     '/markerClusterer.js',
     '/locations.js',
     '/style.css',
-    '/markers/*'
+    '/markers/coffee.png',
+    '/markers/hotel.png',
+    '/markers/information.png',
+    '/markers/office.png',
+    '/markers/pub.png',
+    '/markers/restaurant.png',
 ];
 
 self.addEventListener('install', (evt) => {
