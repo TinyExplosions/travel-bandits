@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/style.css">
     <meta name="description" content="Collated useful information from the Bandits">
     <meta name="theme-color" content="#EE2737" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Travel Bandits \o/</title>
 </head>
 
@@ -44,8 +45,10 @@
                     position: { lat: parseFloat(location.coordinates[0]), lng: parseFloat(location.coordinates[1]) },
                     // label: location.name,
                     map: map,
-                    icon: icons[location.type] || icons['information'],
-                    size: new google.maps.Size(32, 37)
+                    icon: {
+                        url: icons[location.type] || icons['information'],
+                        size: new google.maps.Size(32, 37)
+                    },
                 });
             });
 
