@@ -45,10 +45,7 @@
                     position: { lat: parseFloat(location.coordinates[0]), lng: parseFloat(location.coordinates[1]) },
                     // label: location.name,
                     map: map,
-                    icon: {
-                        url: icons[location.type] || icons['information'],
-                        size: new google.maps.Size(32, 37)
-                    },
+                    icon: {url: icons[location.type] || icons['information'], scaledSize: new google.maps.Size(32, 37)},
                 });
             });
 
