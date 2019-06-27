@@ -38,7 +38,7 @@
             var fab = { lat: 51.284780, lng: -0.758490 };
             // The map, centered at Monument
             var map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 16, center: monument });
+                document.getElementById('map'), { zoom: 16, center: monument, gestureHandling: 'greedy' });
 
             var markers = locations.map(function(location, i) {
                 return new google.maps.Marker({
