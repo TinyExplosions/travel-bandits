@@ -18,6 +18,50 @@ h3 {
     margin: 0;
 }
 
-#map {
+#map, #locations {
     flex-grow: 1;
+}
+
+.location {
+	border-bottom: 1px solid #ccc;
+}
+
+.location h3 {
+	margin-top: 0.2em;
+}
+
+.coffee {
+	background: url('/markers/coffee.png') no-repeat;
+	padding-left: 35px;
+	line-height: 37px;
+}
+
+.hotel {
+	background: url('/markers/hotel.png') no-repeat;
+	padding-left: 35px;
+	line-height: 37px;
+}
+
+.information {
+	background: url('/markers/information.png') no-repeat;
+	padding-left: 35px;
+	line-height: 37px;
+}
+
+.office {
+	background: url('/markers/office.png') no-repeat;
+	padding-left: 35px;
+	line-height: 37px;
+}
+
+.pub {
+	background: url('/markers/pub.png') no-repeat;
+	padding-left: 35px;
+	line-height: 37px;
+}
+
+.restaurant {
+	background: url('/markers/restaurant.png') no-repeat;
+	padding-left: 35px;
+	line-height: 37px;
 }

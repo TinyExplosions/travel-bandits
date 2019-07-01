@@ -42,21 +42,16 @@
                 document.getElementById('map'), { zoom: 16, center: monument, gestureHandling: 'greedy', disableDefaultUI: true });
 
             var markers = locations.map(function(location, i) {
-                let contentString = '<div id="infoWindowContent">' +
-                    '<div id="siteNotice">' +
-                    '</div>' +
-                    '<h3><a href="' + location.link.homepage + '">' + location.name + '</a></h3>' +
-                    '<div id="bodyContent">' +
+                let contentString = '<p><strong><a href="' + location.link.homepage + '">' + location.name + '</a></strong></p>' +
                     '<p>' + location.address + '</p>' +
-                    '<p>' + location.description.Comment + '</p>' +
-                    '</div>' +
-                    '</div>';
+                    '<p>' + location.description.Comment + '</p>';
 
 
                 let marker = new google.maps.Marker({
                     position: { lat: parseFloat(location.coordinates[0]), lng: parseFloat(location.coordinates[1]) },
                     // label: location.name,
                     map: map,
+                    title: location.name,
                     icon: { url: icons[location.type] || icons['information'], scaledSize: new google.maps.Size(32, 37) },
                 });
                 marker.addListener('click', function() {
@@ -79,12 +74,7 @@
         }
         </script>
         <script src="/locations.js"></script>
-        <script src="/markerClusterer.js"></script>
-        <!--Load the API from the specified URL
-      * The async attribute allows the browser to render the page while the API loads
-      * The key parameter will contain your own API key (which is not needed for this tutorial)
-      * The callback parameter executes the initMap() function
-      -->
+        <!-- <script src="/markerClusterer.js"></script> -->
         <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAbaFuSO_Z-2HceI05s1jiO-ktOU3FCSzk&callback=initMap">
         </script>
         <script>
