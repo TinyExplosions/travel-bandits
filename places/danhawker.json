@@ -33,7 +33,7 @@
 {
     "city": "London",
     "country": "UK",
-    "name": "The Hoxton",
+    "name": "The Hoxton Southwark",
     "address": "32-40 Blackfriars Rd, South Bank, London SE1 8PB",
     "coordinates": [51.505786, -0.104743],
     "description":
@@ -209,7 +209,7 @@
 {
     "city": "Camberley",
     "country": "UK",
-    "name": "Crown & Cushion",
+    "name": "Crown and Cushion",
     "address": "Minley Rd, Blackwater, Camberley GU17 9UA",
     "coordinates": [51.307136, -0.804197],
     "description":

@@ -1,67 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-	margin: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .wrapper {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: row;
+    min-height: 0;
+    flex-grow: 1;
 }
 
 .wrapper>* {
-    padding: 0.5em;
+    padding: 0;
 }
 
 h3 {
-    font-family: Overpass, Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
 
-#map, #locations {
+#map,
+#locations {
     flex-grow: 1;
 }
 
-.location {
-	border-bottom: 1px solid #ccc;
+header.page-header {
+    min-height: 56px;
+    padding: 16px 16px 16px 22px;
+    background: #ee0000;
+    white-space: nowrap;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-.location h3 {
-	margin-top: 0.2em;
+header h3 {
+    line-height: 24px;
+    font-size: 16px;
+    color: #ffffff;
 }
+
+#hamburger {
+    font-size: 18px;
+    position: fixed;
+    z-index: 100;
+    width: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #fff;
+    background: #ee0000;
+    border-radius: 50%;
+    right: 16px;
+    bottom: 16px;
+}
+
+/*.location {
+    border-bottom: 1px solid #ccc;
+}
+
+
 
 .coffee {
-	background: url('/markers/coffee.png') no-repeat;
-	padding-left: 35px;
-	line-height: 37px;
+    background: url('/markers/coffee.png') no-repeat;
+    padding-left: 35px;
+    line-height: 37px;
 }
 
 .hotel {
-	background: url('/markers/hotel.png') no-repeat;
-	padding-left: 35px;
-	line-height: 37px;
+    background: url('/markers/hotel.png') no-repeat;
+    padding-left: 35px;
+    line-height: 37px;
 }
 
 .information {
-	background: url('/markers/information.png') no-repeat;
-	padding-left: 35px;
-	line-height: 37px;
+    background: url('/markers/information.png') no-repeat;
+    padding-left: 35px;
+    line-height: 37px;
 }
 
 .office {
-	background: url('/markers/office.png') no-repeat;
-	padding-left: 35px;
-	line-height: 37px;
+    background: url('/markers/office.png') no-repeat;
+    padding-left: 35px;
+    line-height: 37px;
 }
 
 .pub {
-	background: url('/markers/pub.png') no-repeat;
-	padding-left: 35px;
-	line-height: 37px;
+    background: url('/markers/pub.png') no-repeat;
+    padding-left: 35px;
+    line-height: 37px;
 }
 
 .restaurant {
-	background: url('/markers/restaurant.png') no-repeat;
-	padding-left: 35px;
-	line-height: 37px;
+    background: url('/markers/restaurant.png') no-repeat;
+    padding-left: 35px;
+    line-height: 37px;
+}*/
+
+
+.show.home #locations {    
+    transform: none;
+}
+
+.menu--animatable.home #locations {
+    transition: all 330ms ease-in;
+}
+.menu--animatable.show.home #locations {
+    transition: all 330ms ease-out;
+}
+
+.home #locations {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-top: 56px;
+    overflow-y: scroll;
+    max-width: 375px;
+    transform: translateX(-103%);
+    will-change: transform;
+    z-index: 10;
+    background: #fff;
+}
+
+ul#locations {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+ul#locations li:first-child {
+    margin-top: 8px;
+}
+
+ul#locations li:last-child {
+    margin-bottom: 8px;
+}
+
+li.location {
+    height: 72px;
+    padding: 0 0 0 16px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li.location:hover {
+    background: #bada55;
+}
+
+.tn {
+    width: 40px;
+    margin: 16px 16px 16px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content {
+    flex-grow: 1;
+    min-width: 0;
+    padding-right: 24px;
+    border-bottom: 1px solid #ccc;
+    height: 100%;
+}
+
+li.location h3 {
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 16px;
+    color: #000000de;
+}
+
+.location p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #00000099;
+    line-height: 26px;
+    margin: 0
+}
+
+li.separator {
+    margin: 0 18px;
+    padding: 0;
+    line-height: 48px;
+    font-size: 16px;
+    color: #000000de;
 }

@@ -1,4 +1,5 @@
-[{
+[
+{
     "city": "London",
     "country": "UK",
     "name": "The Hydrant",
@@ -65,7 +66,7 @@
 {
     "city": "London",
     "country": "UK",
-    "name": "London Office",
+    "name": "Red Hat",
     "address": "Peninsular House, 30-36 Monument St, London EC3R 8NB",
     "coordinates": [51.509621, -0.085278],
     "description":
@@ -81,7 +82,7 @@
 {
     "city": "Farnborough",
     "country": "UK",
-    "name": "Farnborough Office",
+    "name": "Red Hat",
     "address": "200 Fowler Avenue Farnborough, Hampshire GU14 7JP",
     "coordinates": [51.283309, -0.75775],
     "description":
@@ -93,7 +94,8 @@
     {
         "homepage": "https://www.redhat.com/en/about/office-locations"
     }
-},{
+},
+{
     "city": "Swindon",
     "country": "UK",
     "name": "Helen Browning's Chop House",
@@ -140,5 +142,4 @@
     {
         "homepage": "http://www.jewelinthecrown.co.uk"
     }
-}
-]
+}]
